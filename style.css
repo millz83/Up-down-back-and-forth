@@ -1,0 +1,30 @@
+body {
+    background-color: pink;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height:100vh;
+}
+
+
+.back-forth {
+    height:30px;
+    width:300px;
+    transform:rotate(-30de);
+    background: 
+      radial-gradient(farthest-side,#f03355 90%,#0000) left bottom/15px 15px no-repeat
+      rgb(24, 69, 194);
+    animation:
+      move-0 3.3s infinite alternate linear,
+      move-1 3.3s infinite cubic-bezier(.75,0,1,.6);
+  }
+  
+  @keyframes move-0 {
+      50% {transform:rotate(30deg)}
+  }
+  
+  @keyframes  move-1 {
+      50% {background-position: right bottom}
+  }
+  
